@@ -1,13 +1,81 @@
-<!-- success.html -->
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <title>Mulțumim!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esanu FinanzConsult</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Mulțumim!</h1>
-  <p>Mesajul tău a fost trimis cu succes.</p>
-  <a href="index.html">Înapoi la pagină</a>
+    <header>
+        <div class="header-container">
+            <img src="logo.png" alt="Logo Esanu" class="logo">
+            <div class="header-text">
+                <h1>Esanu FinanzConsult</h1>
+                <p>Consultanți financiari în Trier, Germania</p>
+                <p>Daniel: +49 174 4242600 | Lilia: +49 174 4242603</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#asigurari">Asigurări</a></li>
+            <li><a href="#credite">Credite</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="asigurari">
+        <h2>Asigurări</h2>
+        <ul>
+            <li>Sănătate</li>
+            <li>Auto</li>
+            <li>Locuință</li>
+            <li>Viață</li>
+        </ul>
+    </section>
+
+    <section id="credite">
+        <h2>Credite</h2>
+        <ul>
+            <li>Credite ipotecare</li>
+            <li>Credite personale</li>
+            <li>Credite pentru afaceri</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contactează-ne</h2>
+        <form action="https://formspree.io/f/mzzrbkpg" method="POST">
+            <div class="form-group">
+                <label for="nume">Nume:</label>
+                <input type="text" id="nume" name="nume" required>
+            </div>
+            <div class="form-group">
+                <label for="prenume">Prenume:</label>
+                <input type="text" id="prenume" name="prenume" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefon">Telefon:</label>
+                <input type="tel" id="telefon" name="telefon" required>
+            </div>
+            <div class="form-group">
+                <label for="mesaj">Mesaj:</label>
+                <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="success.html">
+            <button type="submit">Trimite</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Esanu FinanzConsult</p>
+    </footer>
 </body>
 </html>
